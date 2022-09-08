@@ -9,11 +9,3 @@
 /*DESKTOP*/ @media screen and (orientation:landscape) and (height>400px) {
 
 }
-
-*{
-	--bg-color:				#ffffff;
-	--fg-color:				#000000;
-	--secondary-color:		#7986cb; /*300 indigo*/
-	--secondary-light-color:#aab6fe;
-	--secondary-dark-color: #49599a;
-}

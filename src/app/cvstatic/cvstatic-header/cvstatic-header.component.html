@@ -1,0 +1,22 @@
+<div class="container-fluid cvs-header-container">
+	<div class="row p-4 pb-0">
+		<div class="col-8">
+			<div class="row" *ngFor="let dato of personal_data; let i=index">
+				<div class="col-6 border-end border-light"  [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
+					<p class="lh-1 fw-bolder text-end text-border-light m-1 pe-1">{{dato[0]+(dato[0]==""?'':':')}}</p>
+				</div>
+				<div class="col-6 border-light" [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
+					<p class="lh-1 fw-bolder text-start text-border-light m-1 ps-1">{{dato[1]}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-2 p-1 offset-2">
+			<img src="assets/barba.jpg" class="img-fluid rounded float-end" alt="foto curriculum">
+		</div>
+	</div>
+	<div class="row p-2">
+		<div class="col-4">
+			<small class="text-start text-border-light m-0 p-0">updated: 09/09/2022</small>
+		</div>
+	</div>
+</div>
