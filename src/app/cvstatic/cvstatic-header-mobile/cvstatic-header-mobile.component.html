@@ -1,6 +1,16 @@
 <div class="container-fluid cvs-header-container">
+	<div class="row col-10 offset-1">
+		<legend class="text-border-light text-center fs-1 fw-bolder">
+			Curriculum Vitae di Davide Galati
+		</legend>
+	</div>
+	<div class="row">
+		<div class="col-6 offset-3 p-1">
+			<img src="assets/barba.jpg" class="img-fluid rounded float-end" alt="foto curriculum">
+		</div>
+	</div>
 	<div class="row p-4 pb-0">
-		<div class="col-8">
+		<div class="col">
 			<div class="row" *ngFor="let dato of personal_data; let i=index">
 				<div class="col-6 border-end border-light"  [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
 					<p class="lh-1 fw-bolder text-end text-border m-1 pe-1">{{dato[0]}}</p>
@@ -9,9 +19,6 @@
 					<p class="lh-1 fw-bolder text-start text-border-light m-1 ps-1">{{dato[1]}}</p>
 				</div>
 			</div>
-		</div>
-		<div class="col-2 p-1 offset-2">
-			<img src="assets/barba.jpg" class="img-fluid rounded float-end" alt="foto curriculum">
 		</div>
 	</div>
 	<div class="row p-2">
