@@ -1,0 +1,8 @@
+.cvs-header-container{
+	background-color: var(--fg-color);
+	opacity: 0.8;
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--fg-color) 0.5% ), repeating-linear-gradient( var(--secondary-dark-color), var(--fg-color) );
+}
+
+
+

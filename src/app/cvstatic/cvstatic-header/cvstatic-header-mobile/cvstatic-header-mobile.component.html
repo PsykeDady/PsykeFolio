@@ -13,10 +13,10 @@
 		<div class="col">
 			<div class="row" *ngFor="let dato of personal_data; let i=index">
 				<div class="col-6 border-end border-light"  [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
-					<p class="lh-1 fw-bolder text-end text-border m-1 pe-1">{{dato[0]}}</p>
+					<p class="lh-1 fw-bolder text-end text-border m-1 pe-1">{{dato.personal.key}}</p>
 				</div>
 				<div class="col-6 border-light" [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
-					<p class="lh-1 fw-bolder text-start text-border-light m-1 ps-1">{{dato[1]}}</p>
+					<p class="lh-1 fw-bolder text-start text-border-light m-1 ps-1">{{dato.personal.value}}</p>
 				</div>
 			</div>
 		</div>

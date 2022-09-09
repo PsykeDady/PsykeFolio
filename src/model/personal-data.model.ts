@@ -4,4 +4,8 @@ export class PersonalData {
 	) {
 
 	}
+
+	public static buildFromPersonalData(personal_data:PersonalData){
+		return new PersonalData({key:personal_data.personal.key,value:personal_data.personal.value});
+	}
 }
