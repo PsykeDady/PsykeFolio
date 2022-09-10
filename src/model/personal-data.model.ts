@@ -1,6 +1,13 @@
+import { Personal } from "./personal.interface";
+
 export class PersonalData {
+
+	/* SPECIAL PERSONAL DATA TYPE */
+	public static H_SEP:PersonalData=new PersonalData({key:"HSEP",value:"ORIZZONTAL SEPARATOR"})
+	/*  */
+
 	constructor(
-		public personal : {key:string,value:string}
+		public personal : Personal
 	) {
 
 	}

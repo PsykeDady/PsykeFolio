@@ -1,0 +1,14 @@
+<div id="card" class="container-fluid border rounded">
+	<div class="row mb-2">
+		<div id="cardheader" class="col-12 text-center rounded-top">
+			<legend class="m-0">{{card.title}}</legend>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<personal-card-info
+				[personalData]="card.personal_data"
+			></personal-card-info>
+		</div>
+	</div>
+</div>

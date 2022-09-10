@@ -1,0 +1,3 @@
+nav{
+	background: linear-gradient(45deg, var(--fg-color),var(--secondary-light-color),var(--fg-color));
+}

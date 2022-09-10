@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="row">
+		<div 
+			class="col-12" 
+			*ngFor="let data of personalData; let indice=index"
+			[ngClass]="{
+				'col-md-6':data.personal.halfcolumn
+			}"
+		>
+			<span *ngIf="data!=PersonalData.H_SEP">
+				<strong>{{data.personal.key}}</strong>:{{data.personal.value}}
+			</span>
+			<hr class="text-muted col-10 offset-1" *ngIf="data==PersonalData.H_SEP">
+		</div>
+	</div>
+</div>

@@ -10,6 +10,5 @@ import { PersonalData } from "src/model/personal-data.model";
 	personal_data:PersonalData[]=[]; 
 
 	public constructor(){
-		
 	}
 }
