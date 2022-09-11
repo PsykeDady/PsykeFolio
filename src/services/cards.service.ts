@@ -23,6 +23,13 @@ export class CardsService {
 			PersonalData.H_SEP,
 			new PersonalData({key:"Interrotte", value:"", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
+			new PersonalData({key:"2022",value:"Certificazione Angular Intermediate Developer", type:"range"}),
+			new PersonalData({key:"Codice certificazione 3G20ISA",value:"interstate21.com/certification/check.html", type:"link"}),
+		]),
+		new Card("Esperienze Lavorative", [
+			new PersonalData({key:"2017 - 2018", value:StringConstant.FORESTAINCANTATA, type:"range", others: StringConstant.FORESTAINCANTATA_OTHERS}),
+			new PersonalData({key:"2020-2021", value:StringConstant.PCCUBE, type:"range", others: StringConstant.PCCUBE_OTHERS}),
+			new PersonalData({key:"2021-2023", value:StringConstant.MOVEO, type:"range", others: StringConstant.MOVEO_OTHERS}),
 		])
 	];
 

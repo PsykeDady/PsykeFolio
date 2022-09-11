@@ -21,27 +21,32 @@
 					<div 
 						class="col-8 offset-1 offset-md-0 text-start align-self-center overflow-hidden"
 						[ngClass]="{'col-md-8':data.personal.halfcolumn,'col-md-9':!data.personal.halfcolumn}"
-						[ngSwitch]="data.personal.type"
 					>
-						<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{data.personal.value}}</a>
-						<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{data.personal.value}}</a>
-						<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{data.personal.value}}</a>
-						<span *ngSwitchCase="'range'">
-							<div class="container">
-								<div class="row justify-content-center align-items-center">
-									<div class="col-4 text-muted"><hr></div>
-								</div>
-								<div class="row justify-content-center align-items-center">
-									<div class="col-12">
-										{{data.personal.value}}
-									</div>
-								</div>
-								<div class="row justify-content-center align-items-center">
-									<div class="col-4 text-muted"><hr></div>
+						<div class="container-fluid">
+							<div class="row justify-content-center align-items-center g-2">
+								<div class="col" [ngSwitch]="data.personal.type">
+									<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{data.personal.value}}</a>
+									<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{data.personal.value}}</a>
+									<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{data.personal.value}}</a>
+									<span *ngSwitchCase="'range'">
+										<div class="container">
+											<div class="row justify-content-center align-items-center">
+												<div class="col-4 text-muted"><hr></div>
+											</div>
+											<div class="row justify-content-center align-items-center">
+												<div class="col-12">
+													{{data.personal.value}}
+												</div>
+											</div>
+											<div class="row justify-content-center align-items-center">
+												<div class="col-4 text-muted"><hr></div>
+											</div>
+										</div>
+									</span>
+									<span *ngSwitchDefault>{{data.personal.value}}</span>			
 								</div>
 							</div>
-						</span>
-						<span *ngSwitchDefault>{{data.personal.value}}</span>
+						</div>
 					</div>
 				</div>
 			</div>
