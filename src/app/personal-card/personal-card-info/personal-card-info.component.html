@@ -7,9 +7,26 @@
 				'col-md-6':data.personal.halfcolumn
 			}"
 		>
-			<span *ngIf="data!=PersonalData.H_SEP">
-				<strong>{{data.personal.key}}</strong>:{{data.personal.value}}
-			</span>
+			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
+				<div class="row">
+					<div 
+						class="col-3"
+						[ngClass]="{'col-md-4':data.personal.halfcolumn,'col-md-3':!data.personal.halfcolumn}"
+					>	
+						<strong>{{data.personal.key}}</strong>:
+					</div>
+					<div 
+						class="col-8 offset-1 offset-md-0 text-start align-self-center overflow-hidden"
+						[ngClass]="{'col-md-8':data.personal.halfcolumn,'col-md-9':!data.personal.halfcolumn}"
+						[ngSwitch]="data.personal.type"
+					>
+						<a *ngSwitchCase="'link'" 	href="{{data.personal.value}}">{{data.personal.value}}</a>
+						<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{data.personal.value}}</a>
+						<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{data.personal.value}}</a>
+						<span *ngSwitchDefault>{{data.personal.value}}</span>
+					</div>
+				</div>
+			</div>
 			<hr class="text-muted col-10 offset-1" *ngIf="data==PersonalData.H_SEP">
 		</div>
 	</div>
