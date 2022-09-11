@@ -8,21 +8,39 @@
 			}"
 		>
 			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
-				<div class="row">
+				<div class="row justify-content-center align-items-center">
 					<div 
 						class="col-3"
-						[ngClass]="{'col-md-4':data.personal.halfcolumn,'col-md-3':!data.personal.halfcolumn}"
+						[ngClass]="{'col-md-4':data.personal.halfcolumn,'col-md-3':!data.personal.halfcolumn, 'rangebox p-3 mb-2':data.personal.type=='range'}"
+						[ngSwitch]="data.personal.type"
 					>	
-						<strong>{{data.personal.key}}</strong>:
+						<div class="text-wrap text-center fw-bolder fs-5 text-border-light" *ngSwitchCase="'range'">{{data.personal.key}}</div>
+						<div class="cvlabel m-2 text-center" *ngSwitchCase="'label'">{{data.personal.key}}</div>
+						<strong *ngSwitchDefault>{{data.personal.key}}:</strong>
 					</div>
 					<div 
 						class="col-8 offset-1 offset-md-0 text-start align-self-center overflow-hidden"
 						[ngClass]="{'col-md-8':data.personal.halfcolumn,'col-md-9':!data.personal.halfcolumn}"
 						[ngSwitch]="data.personal.type"
 					>
-						<a *ngSwitchCase="'link'" 	href="{{data.personal.value}}">{{data.personal.value}}</a>
+						<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{data.personal.value}}</a>
 						<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{data.personal.value}}</a>
 						<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{data.personal.value}}</a>
+						<span *ngSwitchCase="'range'">
+							<div class="container">
+								<div class="row justify-content-center align-items-center">
+									<div class="col-4 text-muted"><hr></div>
+								</div>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-12">
+										{{data.personal.value}}
+									</div>
+								</div>
+								<div class="row justify-content-center align-items-center">
+									<div class="col-4 text-muted"><hr></div>
+								</div>
+							</div>
+						</span>
 						<span *ngSwitchDefault>{{data.personal.value}}</span>
 					</div>
 				</div>

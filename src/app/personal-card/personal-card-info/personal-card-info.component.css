@@ -1,0 +1,8 @@
+.cvlabel{
+	text-decoration: underline;
+
+}
+.rangebox{
+	background: linear-gradient(45deg, var(--secondary-dark-color), var(--secondary-light-color),var(--secondary-dark-color) );
+	border-radius: 5px;
+}
