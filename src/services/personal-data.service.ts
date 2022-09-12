@@ -5,8 +5,7 @@ export class PersonalDataService {
 	private _personal_data:PersonalData[]=[
 		new PersonalData({key:"",value:"Davide Galati"}),
 		new PersonalData({key:"Data di Nascita",value:"28/07/1991"}),
-		new PersonalData({key:"Luogo di Nascita",value:"Soverato (CZ)"}),
-		new PersonalData({key:"CF",value:"GLTDVD91L28I872M"}),
+		new PersonalData({key:"Luogo di Nascita",value:"Provincia di Catanzaro"}),
 		new PersonalData({key:"Residenza",value:"Rende (CS)"})
 	]
 

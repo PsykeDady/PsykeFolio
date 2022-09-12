@@ -22,7 +22,7 @@ export class StringConstant {
 		"Bugfix minori reactjs",
 		"Bugfix minori html + jsp"
 	]
-	public static readonly MOVEO:string=`Lavoro presso azienda “PCCube” come Senior Developer`
+	public static readonly MOVEO:string=`Lavoro presso azienda “MOVEO” come Junior Developer`
 	public static readonly MOVEO_OTHERS:string[]=[
 		"Sviluppatore Java BE (Java 8 e Java 11)",
 		"Gestione Database MySQL",

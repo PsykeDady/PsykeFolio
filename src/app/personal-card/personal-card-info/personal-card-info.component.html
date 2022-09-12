@@ -8,37 +8,56 @@
 			}"
 		>
 			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
-				<div class="row justify-content-center align-items-center">
+				<div class="row align-items-center">
 					<div 
-						class="col-3"
-						[ngClass]="{'col-md-4':data.personal.halfcolumn,'col-md-3':!data.personal.halfcolumn, 'rangebox p-3 mb-2':data.personal.type=='range'}"
+						class="col-3 col-md-{{data.personal.halfcolumn?4:2}}"
+						[ngClass]="{'rangebox p-3 mb-2':data.personal.type=='range'}"
 						[ngSwitch]="data.personal.type"
 					>	
 						<div class="text-wrap text-center fw-bolder fs-5 text-border-light" *ngSwitchCase="'range'">{{data.personal.key}}</div>
 						<div class="cvlabel m-2 text-center" *ngSwitchCase="'label'">{{data.personal.key}}</div>
-						<strong *ngSwitchDefault>{{data.personal.key}}:</strong>
+						<strong *ngSwitchDefault>{{data.personal.key}}  </strong>
 					</div>
 					<div 
-						class="col-8 offset-1 offset-md-0 text-start align-self-center overflow-hidden"
-						[ngClass]="{'col-md-8':data.personal.halfcolumn,'col-md-9':!data.personal.halfcolumn}"
+						class="col-8 offset-1 offset-md-0 text-start overflow-hidden col-md-{{data.personal.halfcolumn?8:10}"
 					>
 						<div class="container-fluid">
-							<div class="row justify-content-center align-items-center g-2">
-								<div class="col" [ngSwitch]="data.personal.type">
-									<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{data.personal.value}}</a>
-									<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{data.personal.value}}</a>
-									<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{data.personal.value}}</a>
+							<div class="row g-2">
+								<div class="col" [ngSwitch]="data.personal.type??''">
+									<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
+									<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
+									<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
 									<span *ngSwitchCase="'range'">
 										<div class="container">
 											<div class="row justify-content-center align-items-center">
-												<div class="col-4 text-muted"><hr></div>
-											</div>
-											<div class="row justify-content-center align-items-center">
 												<div class="col-12">
-													{{data.personal.value}}
+													<div class="container-fluid" *ngIf='data.personal.others; else simple'>
+														<div class="row justify-content-center align-items-center g-2" >
+															<div class="col fw-bolder">
+																{{data.personal.value}}
+															</div>
+														</div>
+														<div class="row justify-content-center align-items-center g-2">
+															<div class="col text-decoration-underline text-muted small">
+																Attività svolte:
+															</div>
+														</div>
+														<div class="row justify-content-center align-items-center g-2">
+															<div class="col">
+																<ul>
+																	<li *ngFor="let activity of data.personal.others">
+																		{{activity}}
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<ng-template #simple>
+														{{data.personal.value}}
+													</ng-template>
 												</div>
 											</div>
-											<div class="row justify-content-center align-items-center">
+											<div *ngIf="indice<personalData.length-1" class="row justify-content-center align-items-center">
 												<div class="col-4 text-muted"><hr></div>
 											</div>
 										</div>

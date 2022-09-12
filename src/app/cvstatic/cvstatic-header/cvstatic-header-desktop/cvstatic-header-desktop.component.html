@@ -1,6 +1,6 @@
 <div class="container-fluid cvs-header-container">
 	<div class="row p-4 pb-0">
-		<div class="col-8">
+		<div class="col-8 mt-4 mb-44">
 			<div class="row" *ngFor="let dato of personal_data; let i=index">
 				<div class="col-6 border-end border-light"  [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
 					<p class="lh-1 fw-bolder text-end text-border m-1 pe-1">{{dato.personal.key}}</p>

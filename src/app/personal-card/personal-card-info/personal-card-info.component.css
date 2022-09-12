@@ -6,3 +6,12 @@
 	background: linear-gradient(45deg, var(--secondary-dark-color), var(--secondary-light-color),var(--secondary-dark-color) );
 	border-radius: 5px;
 }
+
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: "\00BB \0020";
+	font-weight: bolder;
+	color: var(--secondary-color);
+}
