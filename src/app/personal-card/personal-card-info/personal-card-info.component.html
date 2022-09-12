@@ -10,23 +10,25 @@
 			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
 				<div class="row align-items-center">
 					<div 
-						class="col-3 col-md-{{data.personal.halfcolumn?4:2}}"
+						class="col-3 col-md-{{data.personal.halfcolumn?4:3}}"
 						[ngClass]="{'rangebox p-3 mb-2':data.personal.type=='range'}"
 						[ngSwitch]="data.personal.type"
 					>	
 						<div class="text-wrap text-center fw-bolder fs-5 text-border-light" *ngSwitchCase="'range'">{{data.personal.key}}</div>
-						<div class="cvlabel m-2 text-center" *ngSwitchCase="'label'">{{data.personal.key}}</div>
-						<strong *ngSwitchDefault>{{data.personal.key}}  </strong>
+						<div class="" *ngSwitchCase="'label'"></div>
+						<strong *ngSwitchCase='"skill"' class="small tolist">{{data.personal.key}}  </strong>
+						<strong class="small text-muted" *ngSwitchDefault>{{data.personal.key}}  </strong>
 					</div>
 					<div 
-						class="col-8 offset-1 offset-md-0 text-start overflow-hidden col-md-{{data.personal.halfcolumn?8:10}"
+						class="col-9 text-start overflow-hidden col-md-{{data.personal.halfcolumn?8:9}}"
 					>
 						<div class="container-fluid">
-							<div class="row g-2">
+							<div class="row">
 								<div class="col" [ngSwitch]="data.personal.type??''">
 									<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
 									<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
 									<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
+									<div class="border-bottom border-muted small text-muted fw-bold m-2 text-center" *ngSwitchCase="'label'">{{data.personal.value}}</div>
 									<span *ngSwitchCase="'range'">
 										<div class="container">
 											<div class="row justify-content-center align-items-center">
@@ -58,10 +60,19 @@
 												</div>
 											</div>
 											<div *ngIf="indice<personalData.length-1" class="row justify-content-center align-items-center">
-												<div class="col-4 text-muted"><hr></div>
+												<div class="col-10 text-muted"><hr></div>
 											</div>
 										</div>
 									</span>
+									<div *ngSwitchCase="'skill'">
+										<div class="container-fluid m-1 p-1">
+											<div class="row">
+												<div class="col-12 text-center rounded"
+													[ngStyle]='generateLinear(data.personal.value)'
+												>{{percentinfo(data.personal.value)}}</div>
+											</div>
+										</div>
+									</div>			
 									<span *ngSwitchDefault>{{data.personal.value}}</span>			
 								</div>
 							</div>

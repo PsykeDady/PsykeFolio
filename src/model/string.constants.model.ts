@@ -29,7 +29,7 @@ export class StringConstant {
 		"Sviluppo feature per CMS Magnolia",
 		"Gestione rilasci tramite ssh su server Ubuntu",
 		"Utilizzo server Apache Tomcat",
-		"Sviluppi interni Angular 13"
+		"Sviluppi interni con Angular 13"
 	]
 	
 }

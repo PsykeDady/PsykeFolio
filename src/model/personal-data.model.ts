@@ -3,7 +3,8 @@ import { Personal } from "./personal.interface";
 export class PersonalData {
 
 	/* SPECIAL PERSONAL DATA TYPE */
-	public static H_SEP:PersonalData=new PersonalData({key:"HSEP",value:"ORIZZONTAL SEPARATOR"})
+	public static H_SEP:PersonalData=new PersonalData({key:"HSEP",value:"ORIZZONTAL SEPARATOR", type:"sep"})
+	public static EMPTY:PersonalData=new PersonalData({key:"",value:"",halfcolumn:true, type:"empty"})
 	/*  */
 
 	constructor(

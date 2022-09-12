@@ -9,6 +9,31 @@
 				 -1px  0px  5px var(--secondary-light-color),
 				 -1px -1px  5px var(--secondary-light-color);
 }
+*{
+	--bg-color:				#ffffff;
+	--fg-color:				#000000;
+	--secondary-color:		#7986cb; /*300 indigo*/
+	--secondary-light-color:#aab6fe;
+	--secondary-dark-color: #49599a;
+
+	scrollbar-color: var(--secondary-light-color) var(--secondary-dark-color);
+}
+
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-light-color);
+}
+*::-webkit-scrollbar-track:hover{
+    background-color: var(--secondary-dark-color);
+}
+*::-webkit-scrollbar-thumb:hover{
+    background-color: var(--secondary-light-color);
+}
 
 .text-blur-more{
 	text-shadow:  0px  0px  5px var(--secondary-color),
@@ -53,3 +78,4 @@
 		 0px -1px 5px var(--secondary-color),
 		-1px -1px 5px var(--secondary-color);
 }
+

@@ -1,7 +1,4 @@
-.cvlabel{
-	text-decoration: underline;
 
-}
 .rangebox{
 	background: linear-gradient(45deg, var(--secondary-dark-color), var(--secondary-light-color),var(--secondary-dark-color) );
 	border-radius: 5px;
@@ -9,9 +6,18 @@
 
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-ul li:before {
-	content: "\00BB \0020";
+
+.tolist:before {
+	content: "\00BB";
+	font-weight: bolder;
+	color: var(--secondary-color);
+}
+
+ul >li:before {
+	content: "\00BB";
 	font-weight: bolder;
 	color: var(--secondary-color);
 }

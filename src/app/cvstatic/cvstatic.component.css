@@ -1,3 +1,4 @@
 .chain{
-	border-right: 3px var(--secondary-color) double;
+	border-right: 3px var(--secondary-color) none;
 }
+
