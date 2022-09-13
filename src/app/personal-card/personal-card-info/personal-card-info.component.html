@@ -1,7 +1,7 @@
 <div class="container-fluid">
-	<div class="row">
+	<div class="row align-items-center">
 		<div 
-			class="col-12" 
+			class="col-10 offset-1 offset-md-0 col-md-12" 
 			*ngFor="let data of personalData; let indice=index"
 			[ngClass]="{
 				'col-md-6':data.personal.halfcolumn
@@ -10,7 +10,7 @@
 			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
 				<div class="row align-items-center">
 					<div 
-						class="col-3 col-md-{{data.personal.halfcolumn?4:3}}"
+						class="col-12 col-md-{{data.personal.halfcolumn?4:3}}"
 						[ngClass]="{'rangebox p-3 mb-2':data.personal.type=='range'}"
 						[ngSwitch]="data.personal.type"
 					>	
@@ -60,14 +60,15 @@
 												</div>
 											</div>
 											<div *ngIf="indice<personalData.length-1" class="row justify-content-center align-items-center">
-												<div class="col-10 text-muted"><hr></div>
+												<div class="d-none d-md-block text-muted"><hr></div>
 											</div>
+											<div class="p-2 d-md-none"><br></div>
 										</div>
 									</span>
 									<div *ngSwitchCase="'skill'">
 										<div class="container-fluid m-1 p-1">
 											<div class="row">
-												<div class="col-12 text-center rounded"
+												<div class="col-12 col-md-10 col-xl-12 text-center rounded"
 													[ngStyle]='generateLinear(data.personal.value)'
 												>{{percentinfo(data.personal.value)}}</div>
 											</div>

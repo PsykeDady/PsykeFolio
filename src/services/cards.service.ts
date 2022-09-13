@@ -26,7 +26,7 @@ export class CardsService {
 			new PersonalData({key:"2005 - 2011",value:StringConstant.DIPLOMA, type:"range"}),
 			new PersonalData({key:"2011 - 2016",value:StringConstant.LAUREAT, type:"range"}),
 			new PersonalData({key:"2022",value:"Certificazione Angular Intermediate Developer", type:"range"}),
-			new PersonalData({key:"Link verifica Certificazione",value:"interstate21.com/certification/check.html", type:"link", others:['Codice certificazione 3G20ISA']}),
+			new PersonalData({key:"Link verifica Certificazione Angular",value:"interstate21.com/certification/check.html", type:"link", others:['Codice certificazione 3G20ISA']}),
 			PersonalData.H_SEP,
 			new PersonalData({key:"Interrotte", value:"Interrotte", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
@@ -35,6 +35,10 @@ export class CardsService {
 			new PersonalData({key:"2017 - 2018", value:StringConstant.FORESTAINCANTATA, type:"range", others: StringConstant.FORESTAINCANTATA_OTHERS}),
 			new PersonalData({key:"2020 - 2021", value:StringConstant.PCCUBE, type:"range", others: StringConstant.PCCUBE_OTHERS}),
 			new PersonalData({key:"2021 - 2023", value:StringConstant.MOVEO, type:"range", others: StringConstant.MOVEO_OTHERS}),
+		]),
+		new Card("Altre esperienze in ambito IT", [
+			new PersonalData({key:"2019 - in corso", value:StringConstant.LINUXHUB, type:"range", others: StringConstant.LINUXHUB_OTHERS}),
+			new PersonalData({key:"2022 - in corso", value:StringConstant.HTMLIT, type:"range", others: StringConstant.HTMLIT_OTHERS})
 		]),
 		new Card("Skills", [
 			new PersonalData({key:"Competenze informatiche e teoriche di base", value:"Competenze informatiche e teoriche di base", type:"label"}),

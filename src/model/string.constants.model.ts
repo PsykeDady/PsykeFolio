@@ -31,5 +31,21 @@ export class StringConstant {
 		"Utilizzo server Apache Tomcat",
 		"Sviluppi interni con Angular 13"
 	]
+	public static readonly LINUXHUB:string=`Editore e capo redattore del sito linuxhub.it`
+	public static readonly LINUXHUB_OTHERS:string[]=[
+		"Articoli su gestione desktop e applicazioni Linux",
+		"Articoli su gestione server ssh",
+		"Articoli su container Systemd",
+		"Guide di programmazione in Java, Typescript e Javascript",
+		"Guide di programmazione in bash, awk et simili",
+		"Guide di programmazione REGEX",
+		"Guide ed articoli su Markdown",
+		"Guide Visual Studio Code",
+		"Programmazione degli articoli attraverso Github",
+	]
+	public static readonly HTMLIT:string=`Editore presso HTML.it`
+	public static readonly HTMLIT_OTHERS:string[]=[
+		"Guide su Visual Studio Code"
+	]
 	
 }
