@@ -10,6 +10,12 @@ ul {
 	padding: 0;
 }
 
+.hobbyvalue:before {
+	content: "\2713\0020";
+	font-weight: bolder;
+	color: #198754;
+}
+
 .tolist:before {
 	content: "\00BB";
 	font-weight: bolder;

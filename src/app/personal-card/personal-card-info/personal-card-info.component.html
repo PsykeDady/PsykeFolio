@@ -17,6 +17,7 @@
 						<div class="text-wrap text-center fw-bolder fs-5 text-border-light" *ngSwitchCase="'range'">{{data.personal.key}}</div>
 						<div class="" *ngSwitchCase="'label'"></div>
 						<strong *ngSwitchCase='"skill"' class="small tolist">{{data.personal.key}}  </strong>
+						<strong *ngSwitchCase='"hobby"' class="small"></strong>
 						<strong class="small text-muted" *ngSwitchDefault>{{data.personal.key}}  </strong>
 					</div>
 					<div 
@@ -41,7 +42,7 @@
 														</div>
 														<div class="row justify-content-center align-items-center g-2">
 															<div class="col text-decoration-underline text-muted small">
-																Attività svolte:
+																{{data.personal.others_label??'Attività svolte:'}}
 															</div>
 														</div>
 														<div class="row justify-content-center align-items-center g-2">
@@ -73,7 +74,8 @@
 												>{{percentinfo(data.personal.value)}}</div>
 											</div>
 										</div>
-									</div>			
+									</div>	
+									<div class="border-bottom border-muted small fw-bold m-2 hobbyvalue" *ngSwitchCase="'hobby'">{{data.personal.value}}</div>
 									<span *ngSwitchDefault>{{data.personal.value}}</span>			
 								</div>
 							</div>
