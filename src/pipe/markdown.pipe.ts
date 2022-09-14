@@ -19,11 +19,9 @@ export class MarkdownPipe implements PipeTransform{
 					 * tmp1:check if first char or not
 					 * tmp2:build italic text
 					 */
-					console.log("ciao "+c+" tmp1 "+tmp1)
 					switch(c){
 						case '*': 
 							if(tmp1=="") {
-								console.log("ciao if")
 								typematch="strong"; 
 							} else {
 								builded+=`<em class='buildedemp'>${tmp2}</em>`

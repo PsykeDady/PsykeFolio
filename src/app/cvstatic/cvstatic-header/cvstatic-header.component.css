@@ -1,11 +1,6 @@
-/*MOBILE - PORTRAIT ONLY*/ @media screen and (orientation:portrait) {
-
-}
-
-/*MOBILE - LANDSCAPE ONLY*/ @media screen and (orientation:landscape) and (height<=400px) {
-
-}
-
-/*DESKTOP*/ @media screen and (orientation:landscape) and (height>400px) {
-
+.cvs-header-container{
+	background-color: var(--fg-color);
+	opacity: 0.8;
+	background: radial-gradient(circle at 0 0, var(--fg-color) 30%, var(--secondary-dark-color) 100%)
+	
 }

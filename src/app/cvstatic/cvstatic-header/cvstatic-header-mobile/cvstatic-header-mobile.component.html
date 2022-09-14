@@ -11,19 +11,19 @@
 	</div>
 	<div class="row p-4 pb-0">
 		<div class="col">
-			<div class="row" *ngFor="let dato of personal_data; let i=index">
-				<div class="col-6 border-end border-light"  [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
-					<p class="lh-1 fw-bolder text-end text-border m-1 pe-1">{{dato.personal.key}}</p>
+			<div class="row align-items-center mb-1" *ngFor="let dato of personal_data; let i=index">
+				<div class="col-6 pe-1">
+					<p class="lh-1 fw-bolder text-end text-border m-0 p-0">{{dato.personal.key}}</p>
 				</div>
-				<div class="col-6 border-light" [ngClass]="{'border-bottom':i!=(personal_data.length-1)}">
-					<p class="lh-1 fw-bolder text-start text-border-light m-1 ps-1">{{dato.personal.value}}</p>
+				<div class="col-5 ps-0">
+					<p class="lh-1 fw-bolder text-start text-border-light p-0 m-0 ps-1 border-start border-light">{{dato.personal.value}}</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row p-2">
-		<div class="col-4">
-			<small class="text-start text-border-light m-0 p-0 text-muted">updated: 09/09/2022</small>
+	<div class="row p-2 pe-0 align-items-end justify-content-end">
+		<div class="col-4 offset-8 text-end">
+			<small class="text-border-light m-0 p-0 text-muted">updated: 09/09/2022</small>
 		</div>
 	</div>
 </div>

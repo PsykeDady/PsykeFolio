@@ -4,7 +4,7 @@ import { PersonalData } from "src/model/personal-data.model";
 @Component({
 	selector:"cvstatic-header-mobile",
 	templateUrl:"./cvstatic-header-mobile.component.html",
-	styleUrls:["./cvstatic-header-mobile.component.css"]
+	styleUrls:["../cvstatic-header.component.css","./cvstatic-header-mobile.component.css"]
 }) export class CVStaticHeaderMobile implements OnInit {
 	@Input("personal_data")
 	personal_data_i:PersonalData[]= []
