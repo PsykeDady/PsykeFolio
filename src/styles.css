@@ -79,3 +79,6 @@
 		-1px -1px 5px var(--secondary-color);
 }
 
+.buildedemp{
+	color:var(--secondary-dark-color);
+}

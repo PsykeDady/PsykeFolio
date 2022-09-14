@@ -36,8 +36,8 @@
 												<div class="col-12">
 													<div class="container-fluid" *ngIf='data.personal.others; else simple'>
 														<div class="row justify-content-center align-items-center g-2" >
-															<div class="col fw-bolder">
-																{{data.personal.value}}
+															<div class="col fw-bolder" [innerHtml]="data.personal.value|markdown">
+																
 															</div>
 														</div>
 														<div class="row justify-content-center align-items-center g-2">
@@ -58,7 +58,7 @@
 														</div>
 													</div>
 													<ng-template #simple>
-														{{data.personal.value}}
+														<span [innerHtml]="data.personal.value | markdown"></span>
 													</ng-template>
 												</div>
 											</div>
