@@ -48,8 +48,10 @@
 														<div class="row justify-content-center align-items-center g-2">
 															<div class="col">
 																<ul>
-																	<li *ngFor="let activity of data.personal.others">
-																		{{activity}}
+																	<li *ngFor="let activity of data.personal.others"
+																		[innerHTML]="' '+activity| markdown"
+																	>
+
 																	</li>
 																</ul>
 															</div>
@@ -69,13 +71,13 @@
 									<div *ngSwitchCase="'skill'">
 										<div class="container-fluid m-1 p-1">
 											<div class="row">
-												<div class="col-12 col-md-10 col-xl-12 text-center rounded"
+												<div class="col-12 col-md-10 col-xl-12 text-center rounded text-white"
 													[ngStyle]='generateLinear(data.personal.value)'
-												>{{percentinfo(data.personal.value)}}</div>
+												>{{percentinfo(data.personal.value)|level}}</div>
 											</div>
 										</div>
 									</div>	
-									<div class="border-bottom border-muted small fw-bold m-2 hobbyvalue" *ngSwitchCase="'hobby'">{{data.personal.value}}</div>
+									<div class="border-bottom border-muted small fw-bold m-2 hobbyvalue" *ngSwitchCase="'hobby'" [innerHTML]="data.personal.value| markdown"></div>
 									<span *ngSwitchDefault>{{data.personal.value}}</span>			
 								</div>
 							</div>

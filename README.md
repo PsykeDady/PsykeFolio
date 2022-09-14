@@ -4,6 +4,6 @@ CV and Portfolio
 
 
 ## TODO 
-- implementare attività svolte
-- implementare link dentro range per certificazione angular
-- disaccoppiare link da nome link 
+- implementare markdown grassetto, underline e corsivo
+- legenda
+- pannello superiore

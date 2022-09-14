@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LevelPipe } from 'src/pipe/levels.pipe';
+import { MarkdownPipe } from 'src/pipe/markdown.pipe';
 import { CardsService } from 'src/services/cards.service';
 import { PersonalDataService } from 'src/services/personal-data.service';
 
@@ -22,7 +24,9 @@ import { PersonalCard } from './personal-card/personal-card.component';
 		CVStaticHeaderMobile,
 		CVStaticStickyBar,
 		PersonalCard,
-		PersonalCardInfo
+		PersonalCardInfo,
+		LevelPipe,
+		MarkdownPipe
 	],
 	imports: [
 		BrowserModule

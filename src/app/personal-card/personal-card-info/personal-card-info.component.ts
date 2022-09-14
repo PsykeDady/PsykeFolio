@@ -21,7 +21,6 @@ import { PersonalData } from "src/model/personal-data.model";
 					[klass: string]: any;
 				} | null | undefined {
 		let nvalue:number = this.percentinfo(value);
-		console.log(nvalue);
 		return nvalue==100? {'backgroundColor':'var(--secondary-dark-color)'} :
 					nvalue==0? {'backgroundColor':'var(--secondary-light-color)'}:
 					{'background':`linear-gradient(to right, var(--secondary-dark-color) 0%, var(--secondary-dark-color) ${nvalue}%, var(--secondary-light-color) 0%,var(--secondary-light-color) 100%)`};
