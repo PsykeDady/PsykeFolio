@@ -47,24 +47,28 @@
 }
 
 .text-border{
-	text-shadow:  0px  0px  2px var(--bg-color),
-				  0px  1px  2px var(--bg-color),
-				  1px  0px  2px var(--bg-color),
-				  1px  1px  2px var(--bg-color),
-				  0px -1px  2px var(--bg-color),
-				 -1px  0px  2px var(--bg-color),
-				 -1px -1px  2px var(--bg-color);
+	text-shadow:  0px  0px  1px var(--bg-color),
+				  0px  1px  1px var(--bg-color),
+				  1px  0px  1px var(--bg-color),
+				  1px  1px  1px var(--bg-color),
+				  0px -1px  1px var(--bg-color),
+				 -1px  0px  1px var(--bg-color),
+				 -1px -1px  1px var(--bg-color),
+				 -1px  1px  1px var(--bg-color),
+				  1px -1px  1px var(--bg-color);
 	color: var(--fg-color);
 }
 
 .text-border-light{
-	text-shadow:  0px  0px 2px var(--fg-color),
-				  0px  1px 2px var(--fg-color),
-				  1px  0px 2px var(--fg-color),
-				  1px  1px 2px var(--fg-color),
-				  0px -1px 2px var(--fg-color),
-				 -1px  0px 2px var(--fg-color),
-				 -1px -1px 2px var(--fg-color);
+	text-shadow:  0px  0px 1px var(--fg-color),
+				  0px  1px 1px var(--fg-color),
+				  1px  0px 1px var(--fg-color),
+				  1px  1px 1px var(--fg-color),
+				  0px -1px 1px var(--fg-color),
+				 -1px  0px 1px var(--fg-color),
+				 -1px -1px 1px var(--fg-color),
+				 -1px  1px 1px var(--fg-color),
+				 1px  -1px 1px var(--fg-color);
 	color: var(--bg-color);
 }
 

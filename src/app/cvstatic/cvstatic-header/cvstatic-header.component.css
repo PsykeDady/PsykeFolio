@@ -1,6 +1,6 @@
 .cvs-header-container{
 	background-color: var(--fg-color);
 	opacity: 0.8;
-	background: radial-gradient(circle at 0 0, var(--fg-color) 25%, var(--secondary-dark-color) 65%, var(--secondary-color) 90%, var(--secondary-light-color) 100%)
+	background: radial-gradient(circle at 0 0, var(--secondary-light-color) 1%, var(--secondary-color) 15%, var(--secondary-dark-color) 45%, var(--fg-color) 100%)
 	
 }
