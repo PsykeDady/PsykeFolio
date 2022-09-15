@@ -6,5 +6,6 @@ import { PersonalDataService } from "src/services/personal-data.service";
 	templateUrl:"./cvstatic-header.component.html",
 	styleUrls:["./cvstatic-header.component.css"]
 }) export class CVStaticHeader {
+	updated:string="15/09/2022"
 	constructor(public personalDataService:PersonalDataService){}
 }

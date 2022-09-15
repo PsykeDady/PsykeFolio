@@ -5,21 +5,20 @@ import { StringConstant } from "src/model/string.constants.model";
 export class CardsService {
 
 	private _cards:Card[]=[
-		new Card("Contatti e social", [
+		new Card("Stato attuale e contatti", [
+			new PersonalData({key:"Contatti",value:"Email",type:"label"}),
 			new PersonalData({key:"email 1",value:"psykedady@gmail.com", type:"email",halfcolumn:true}),
-			PersonalData.EMPTY,
 			new PersonalData({key:"email 2",value:"psdady@msn.com", type:"email",halfcolumn:true}),
-			PersonalData.EMPTY,
-			PersonalData.H_SEP,
+			new PersonalData({key:"Tel 1",value:"+39 3663148360", type:"tel",halfcolumn:true}),
+			new PersonalData({key:"Tel 2",value:"+39 3274437030", type:"tel",halfcolumn:true}),
+			new PersonalData({key:"Social",value:"Social",type:"label"}),
 			new PersonalData({key:"Twitter",value:"twitter.com/PsykeDady",halfcolumn:true, type:"link"}),
 			new PersonalData({key:"github",value:"github.com/PsykeDady",halfcolumn:true, type:"link"}),
 			new PersonalData({key:"Telegram",value:"t.me/PsykeDady", type:"link",halfcolumn:true}),
 			PersonalData.EMPTY,
-			PersonalData.H_SEP,
-			new PersonalData({key:"Tel 1",value:"+39 3663148360", type:"tel",halfcolumn:true}),
-			PersonalData.EMPTY,
-			new PersonalData({key:"Tel 2",value:"+39 3274437030", type:"tel",halfcolumn:true}),
-			PersonalData.EMPTY,
+			new PersonalData({key:"Stato attuale",value:"Stato attuale",type:"label"}),
+			new PersonalData({key:"Attuale Occupazione",value:"*Sviluppatore Junior Fullstack* presso **MOVEO**"}),
+			new PersonalData({key:"Livello di istruzione",value:"*Laurea Triennale* in **Ingegneria Informatica** presso **Unical**"}),
 		]),
 		new Card("Istruzione", [
 			new PersonalData({key:"Conseguite", value:"Conseguite", type:"label"}),
@@ -27,10 +26,8 @@ export class CardsService {
 			new PersonalData({key:"2011 - 2016",value:StringConstant.LAUREAT, type:"range"}),
 			new PersonalData({key:"2022",value:"Certificazione Angular Intermediate Developer", type:"range", others_label:"Note:", others:[
 				"Codice certificazione 3G20ISA",
-				"[Link verifica Certificazione Angular](interstate21.com/certification/check.html)"
+				"[Link verifica Certificazione Angular](https://interstate21.com/certification/check.html)"
 			]}),
-			// new PersonalData({key:"Link verifica Certificazione Angular",value:"interstate21.com/certification/check.html", type:"link", others:['Codice certificazione 3G20ISA']}),
-			// PersonalData.H_SEP,
 			new PersonalData({key:"Interrotte", value:"Interrotte", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
 		]),

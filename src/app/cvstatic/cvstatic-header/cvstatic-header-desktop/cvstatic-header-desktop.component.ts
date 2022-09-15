@@ -8,6 +8,8 @@ import { PersonalData } from "src/model/personal-data.model";
 }) export class CVStaticHeaderDesktop {
 	@Input() 
 	personal_data:PersonalData[]=[]; 
+	@Input()
+	updated:string="";
 
 	public constructor(){
 	}

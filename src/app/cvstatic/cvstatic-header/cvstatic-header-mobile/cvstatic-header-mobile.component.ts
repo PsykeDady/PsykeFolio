@@ -9,6 +9,9 @@ import { PersonalData } from "src/model/personal-data.model";
 	@Input("personal_data")
 	personal_data_i:PersonalData[]= []
 
+	@Input()
+	updated:string="";
+
 	personal_data:PersonalData[]= []
 	
 

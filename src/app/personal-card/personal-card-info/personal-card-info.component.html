@@ -1,10 +1,10 @@
 <div class="container-fluid">
 	<div class="row align-items-center">
 		<div 
-			class="col-10 offset-1 offset-md-0 col-md-12" 
+			class="col-10 offset-1 offset-md-0" 
 			*ngFor="let data of personalData; let indice=index"
 			[ngClass]="{
-				'col-md-6':data.personal.halfcolumn
+				'col-md-6 small':data.personal.halfcolumn
 			}"
 		>
 			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
@@ -78,7 +78,9 @@
 										</div>
 									</div>	
 									<div class="border-bottom border-muted small fw-bold m-2 hobbyvalue" *ngSwitchCase="'hobby'" [innerHTML]="data.personal.value| markdown"></div>
-									<span *ngSwitchDefault>{{data.personal.value}}</span>			
+									<span *ngSwitchDefault
+										[innerHtml]="data.personal.value|markdown"
+									></span>			
 								</div>
 							</div>
 						</div>
