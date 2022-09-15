@@ -9,6 +9,6 @@ import { Card } from "src/model/card.model";
 export class PersonalCard{
 	
 	@Input()
-	card:Card=new Card("",[]); 
+	card:Card=new Card("","",[]); 
 
 }

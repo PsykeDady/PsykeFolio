@@ -86,3 +86,58 @@
 .buildedemp{
 	color:var(--secondary-dark-color);
 }
+
+.really-small{
+	font-size: x-small;
+}
+
+
+
+.mtooltip  .mtooltiptext {
+	visibility: hidden;
+	width: 40vmin;
+	background-color: var(--secondary-dark-color);
+	color: var(--bg-color);
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	text-shadow: none;
+	box-shadow: 
+		 0px  0px 2px var(--fg-color),
+		 1px  0px 2px var(--fg-color),
+		 0px  1px 2px var(--fg-color),
+		 1px  1px 2px var(--fg-color),
+		-1px  0px 2px var(--fg-color),
+		 0px -1px 2px var(--fg-color),
+		-1px -1px 2px var(--fg-color),
+		-1px  1px 2px var(--fg-color),
+		 1px -1px 2px var(--fg-color)
+		;
+
+	
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+
+	/* Fade in mtooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.mtooltip  .mtooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.mtooltip:hover .mtooltiptext {
+	visibility: visible;
+	opacity: 1;
+}

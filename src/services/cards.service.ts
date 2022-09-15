@@ -5,7 +5,7 @@ import { StringConstant } from "src/model/string.constants.model";
 export class CardsService {
 
 	private _cards:Card[]=[
-		new Card("Stato attuale e contatti", [
+		new Card("Stato attuale e contatti", "fa fa-id-card",[
 			new PersonalData({key:"Contatti",value:"Email",type:"label"}),
 			new PersonalData({key:"email 1",value:"psykedady@gmail.com", type:"email",halfcolumn:true}),
 			new PersonalData({key:"email 2",value:"psdady@msn.com", type:"email",halfcolumn:true}),
@@ -20,7 +20,7 @@ export class CardsService {
 			new PersonalData({key:"Attuale Occupazione",value:"*Sviluppatore Junior Fullstack* presso **MOVEO**"}),
 			new PersonalData({key:"Livello di istruzione",value:"*Laurea Triennale* in **Ingegneria Informatica** presso **Unical**"}),
 		]),
-		new Card("Istruzione", [
+		new Card("Istruzione", "fa fa-book",[
 			new PersonalData({key:"Conseguite", value:"Conseguite", type:"label"}),
 			new PersonalData({key:"2005 - 2011",value:StringConstant.DIPLOMA, type:"range"}),
 			new PersonalData({key:"2011 - 2016",value:StringConstant.LAUREAT, type:"range"}),
@@ -31,16 +31,16 @@ export class CardsService {
 			new PersonalData({key:"Interrotte", value:"Interrotte", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
 		]),
-		new Card("Esperienze Lavorative", [
+		new Card("Esperienze Lavorative", "fa fa-briefcase",[
 			new PersonalData({key:"2017 - 2018", value:StringConstant.FORESTAINCANTATA, type:"range", others: StringConstant.FORESTAINCANTATA_OTHERS}),
 			new PersonalData({key:"2020 - 2021", value:StringConstant.PCCUBE, type:"range", others: StringConstant.PCCUBE_OTHERS}),
 			new PersonalData({key:"2021 - in corso", value:StringConstant.MOVEO, type:"range", others: StringConstant.MOVEO_OTHERS}),
 		]),
-		new Card("Altre esperienze in ambito IT", [
+		new Card("Altre esperienze in ambito IT", "fa fa-laptop",[
 			new PersonalData({key:"2019 - in corso", value:StringConstant.LINUXHUB, type:"range", others: StringConstant.LINUXHUB_OTHERS}),
 			new PersonalData({key:"2022 - in corso", value:StringConstant.HTMLIT, type:"range", others: StringConstant.HTMLIT_OTHERS})
 		]),
-		new Card("Competenze Linguistiche", [
+		new Card("Competenze Linguistiche", "fa fa-language",[
 			new PersonalData({key:"Italiano (Madrelingua)",value:"Italiano (Madrelingua)",type:"label"}),
 			new PersonalData({key:"Reading", value:"4", type:"skill"}),
 			new PersonalData({key:"Writing", value:"4", type:"skill"}),
@@ -52,7 +52,7 @@ export class CardsService {
 			new PersonalData({key:"Listening", value:"1", type:"skill"}),
 			new PersonalData({key:"Speaking", value:"2", type:"skill"}),
 		]),
-		new Card("Skills", [
+		new Card("Skills", "fa fa-pie-chart",[
 			new PersonalData({key:"Competenze informatiche e teoriche di base", value:"Competenze informatiche e teoriche di base", type:"label"}),
 			new PersonalData({key:"Programmazione a basso livello", value:"3", type:"skill"}),
 			new PersonalData({key:"Architetture di rete", value:"2", type:"skill"}),
@@ -116,7 +116,7 @@ export class CardsService {
 			new PersonalData({key:"Liberty Server (IBM)", value:"2", type:"skill"}),
 			new PersonalData({key:"Websphere 8.5", value:"1", type:"skill"}),
 		]),
-		new Card ("Altre Competenze",[
+		new Card ("Altre competenze digitali","fa fa-keyboard-o",[
 			new PersonalData({key:"Suite d'ufficio", value:"Suite d'ufficio", type:"label"}),
 			new PersonalData({key:"Libreoffice writer /Microsoft word", value:"4", type:"skill"}),
 			new PersonalData({key:"Libreoffice calc /Microsoft excel", value:"3", type:"skill"}),
@@ -132,7 +132,7 @@ export class CardsService {
 			new PersonalData({key:"Olive editor (formati video)", value:"1", type:"skill"}),
 			new PersonalData({key:"Blender (render 3D)", value:"1", type:"skill"}),
 		]),
-		new Card("Interessi e hobby",[
+		new Card("Interessi e hobby","fa fa-linux",[
 			new PersonalData({key:"",value:"Utilizzatore quotidiano di sistemi GNU/Linux ( btw I use Arch )",type:"hobby"}),
 			new PersonalData({key:"",value:"Utilizzatore occasionale di sistemi Microsoft Windows",type:"hobby"}),
 			new PersonalData({key:"",value:"Utilizzatore occasionale di sistemi MacOS / OSX",type:"hobby"}),
