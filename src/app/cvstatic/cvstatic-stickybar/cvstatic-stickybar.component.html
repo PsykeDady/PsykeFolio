@@ -3,19 +3,19 @@
 		<a href="" class="navbar-brand text-blur">CV</a>
 
 		<ul class="navbar-nav me-auto">
-			<li class="nav-item small mtooltip" *ngFor="let card of cardsService.cards; let indice=index"
+			<li class="nav-item mtooltip" *ngFor="let card of cardsService.cards; let indice=index"
 				(click)="scrollToCard(card)"
 			>
-				<span *ngIf="indice>1">
+				<span *ngIf="indice>0">
 					<span class="d-none d-xl-inline really-small">
 						{{card.title}}
 					</span>
-					<span class="d-xl-none">
+					<span class="d-xl-none m-1">
 						<span class="{{card.icon}} text-border-light">
 	
 						</span> 
 					</span>
-					<span class="me-1" *ngIf="indice<cardsService.cards.length-1">
+					<span class="me-1 small" *ngIf="indice<cardsService.cards.length-1">
 						|
 					</span>
 					<span class="mtooltiptext">
