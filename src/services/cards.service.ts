@@ -137,7 +137,7 @@ export class CardsService {
 			new PersonalData({key:"",value:"Utilizzatore occasionale di sistemi Microsoft Windows",type:"hobby"}),
 			new PersonalData({key:"",value:"Utilizzatore occasionale di sistemi MacOS / OSX",type:"hobby"}),
 			new PersonalData({key:"",value:"Editore e Capo redattore di [LinuxHub](https://linuxhub.it/info) e appassionato delle tecnologie open source",type:"hobby"}),
-			new PersonalData({key:"",value:"Mi diletto amatorialmente nell’editing di foto e disegni (lavori su [DevianArt](https://www.deviantart.com/PsykeDady)",type:"hobby"}),
+			new PersonalData({key:"",value:"Mi diletto amatorialmente nell’editing di foto e disegni (lavori su [DevianArt](https://www.deviantart.com/PsykeDady))",type:"hobby"}),
 			new PersonalData({key:"",value:"Musicista a livello amatoriale",type:"hobby"}),
 			new PersonalData({key:"Basso",value:"3",type:"skill"}),
 			new PersonalData({key:"Chitarra",value:"1",type:"skill"}),
