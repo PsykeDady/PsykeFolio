@@ -1,6 +1,8 @@
 <cvstatic-header></cvstatic-header>
 <cvstatic-stickybar></cvstatic-stickybar>
-
+<div
+	class="page-break-after-always"
+></div>
 <div class="container-fluid">
 	<div class="row" *ngFor="let card of cards">
 		<div class="col-6 chain">
@@ -11,6 +13,9 @@
 				[card]="card"
 			></personal-card>
 		</div>
+		<div
+			class="page-break-after-always"
+		></div>
 	</div>
 </div>
 
