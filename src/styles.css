@@ -12,9 +12,9 @@
 *{
 	--bg-color:				#ffffff;
 	--fg-color:				#000000;
-	--secondary-color:		#7986cb; /*300 indigo*/
-	--secondary-light-color:#aab6fe;
-	--secondary-dark-color: #49599a;
+	--secondary-color:		#ff9e80;
+	--secondary-light-color:#ffd0b0;
+	--secondary-dark-color: #c96f53;
 
 	scrollbar-color: var(--secondary-light-color) var(--secondary-dark-color);
 }
