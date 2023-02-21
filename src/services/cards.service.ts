@@ -28,6 +28,10 @@ export class CardsService {
 				"Codice certificazione 3G20ISA",
 				"[Link verifica Certificazione Angular](https://interstate21.com/certification/check.html)"
 			]}),
+			new PersonalData({key:"2023",value:"Certificazione React.js", type:"range", others_label:"Note:", others:[
+				"Codice certificazione 1NFZB63O76",
+				"[Link verifica Certificazione React.js](https://verify.w3schools.com/1NFZB63O76)"
+			]}),
 			new PersonalData({key:"Interrotte", value:"Interrotte", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
 		]),
