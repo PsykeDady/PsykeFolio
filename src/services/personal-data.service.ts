@@ -4,7 +4,7 @@ export class PersonalDataService {
 	
 	private _personal_data:PersonalData[]=[
 		new PersonalData({key:"name",value:"Davide Galati"}),
-		new PersonalData({key:"description",value:"I'm FullStack Developer"}),
+		new PersonalData({key:"description",value:"I'm a fullstack developer"}),
 		new PersonalData({key:"Data di Nascita",value:"28/07/1991"}),
 		new PersonalData({key:"Luogo di Nascita",value:"Provincia di Catanzaro"}),
 		new PersonalData({key:"Residenza",value:"Rende (CS)"})
