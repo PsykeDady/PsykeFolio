@@ -1,23 +1,19 @@
 <cvstatic-header></cvstatic-header>
 <cvstatic-stickybar></cvstatic-stickybar>
 <cvstatic-qrcode></cvstatic-qrcode>
-<div
-	class="page-break-after-always"
-></div>
+<div class="page-break-after-always">
+</div>
 <div class="container-fluid">
-	<div class="row" *ngFor="let card of cards">
-		<div class="col-6 chain">
-			&nbsp;
-		</div>
+	<div class="row" *ngFor="let card of cards; let i =index">
 		<div class="col-12">
+			<br>
 			<personal-card
 				[card]="card"
 			></personal-card>
 		</div>
-		<div
-			class="page-break-after-always"
-		></div>
-	</div>
+		<div class="page-break-after-always" *ngIf="i<cards.length-1">
+			<br>
+		</div>
 </div>
 
 <br><br><br>

@@ -33,21 +33,20 @@ export class CardsService {
 				"Codice certificazione 3G20ISA",
 				"[Link verifica Certificazione Angular](https://interstate21.com/certification/check.html)"
 			]}),
+			PersonalData.PBREAK,
 			new PersonalData({key:"Interrotte", value:"Interrotte", type:"label"}),
 			new PersonalData({key:"2016 - 2022",value:StringConstant.LAUREAM, type:"range"}),
 		]),
 		new Card("Esperienze Lavorative", "fa fa-briefcase",[
 			new PersonalData({key:"2021 - in corso", value:StringConstant.MOVEO, type:"range", others: StringConstant.MOVEO_OTHERS}),
 			new PersonalData({key:"2020 - 2021", value:StringConstant.PCCUBE, type:"range", others: StringConstant.PCCUBE_OTHERS}),
+			new PersonalData({key:"Altre esperienze lavorative", value:"Altre esperienze lavorative", type:"label"}),
+			new PersonalData({key:"2017 - 2018", value:StringConstant.FORESTAINCANTATA, type:"range", others: StringConstant.FORESTAINCANTATA_OTHERS}),
 		]),
 		new Card("Altre esperienze in ambito IT", "fa fa-laptop",[
 			new PersonalData({key:"2022 - in corso", value:StringConstant.HTMLIT, type:"range", others: StringConstant.HTMLIT_OTHERS}),
 			new PersonalData({key:"2019 - in corso", value:StringConstant.LINUXHUB, type:"range", others: StringConstant.LINUXHUB_OTHERS}),
 		]),
-		new Card("Altre Esperienze lavorative", "fa fa-black-tie",[
-			new PersonalData({key:"2017 - 2018", value:StringConstant.FORESTAINCANTATA, type:"range", others: StringConstant.FORESTAINCANTATA_OTHERS}),
-		]),
-
 		new Card("Competenze Linguistiche", "fa fa-language",[
 			new PersonalData({key:"Italiano (Madrelingua)",value:"Italiano (Madrelingua)",type:"label"}),
 			new PersonalData({key:"Reading", value:"4", type:"skill"}),
@@ -79,6 +78,7 @@ export class CardsService {
 			new PersonalData({key:"PLSQL", value:"2", type:"skill"}),
 			new PersonalData({key:"Modellazione", value:"Modellazione", type:"label"}),
 			new PersonalData({key:"UML", value:"2", type:"skill"}),
+			PersonalData.PBREAK,
 			new PersonalData({key:"Linguaggi di Markup", value:"Linguaggi di Markup", type:"label"}),
 			new PersonalData({key:"HTML+CSS", value:"3", type:"skill"}),
 			new PersonalData({key:"Markdown", value:"4", type:"skill"}),

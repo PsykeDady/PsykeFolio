@@ -163,26 +163,29 @@
 
 
 .page-break-after{
-	page-break-after  :auto ;
-	page-break-inside: avoid;
-	break-inside: avoid;
+	page-break-after  :auto  !important;
+	break-after: auto !important;
 }
 .page-break-before{
-	page-break-before  :auto ;
-	page-break-inside: avoid;
-	break-inside: avoid;
+	page-break-before  :auto !important ;
+	break-before: auto !important;
+}
+.page-break-inside{
+	page-break-inside  :auto  !important;
+	break-inside: auto !important;
+}
+.page-break-inside-always{
+	page-break-inside  :always !important ;
+	break-inside: page !important;
 }
 
-
 .page-break-after-always{
-	page-break-after  :always ;
-	page-break-inside: avoid;
-	break-inside: avoid;
+	page-break-after  :always  !important;
+	break-after: page !important;
 }
 .page-break-before-always{
 	page-break-before  :always ;
-	page-break-inside: avoid;
-	break-inside: avoid;
+	break-before: page !important;
 }
 
 @media print {

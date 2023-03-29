@@ -7,7 +7,8 @@
 				'col-md-6 small':data.personal.halfcolumn
 			}"
 		>
-			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP">
+			<div *ngIf="data==PersonalData.PBREAK" class="page-break-after-always"></div>
+			<div class="container m-0 p-0" *ngIf="data!=PersonalData.H_SEP&&data!=PersonalData.PBREAK">
 				<div class="row align-items-center">
 					<div 
 						class="col-12 col-md-{{data.personal.halfcolumn?4:3}}"
@@ -29,7 +30,7 @@
 									<a *ngSwitchCase="'link'" 	href="https://{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
 									<a *ngSwitchCase="'email'" 	href="mailto:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
 									<a *ngSwitchCase="'tel'" 	href="tel:{{data.personal.value}}">{{(data.personal.others?.[0])??data.personal.value}}</a>
-									<div class="border-bottom border-muted small text-muted fw-bold m-2 text-center page-break-before" *ngSwitchCase="'label'">{{data.personal.value}}</div>
+									<div class="border-bottom border-muted small text-muted fw-bold m-2 text-center" *ngSwitchCase="'label'">{{data.personal.value}}</div>
 									<span *ngSwitchCase="'range'">
 										<div class="container">
 											<div class="row justify-content-center align-items-center">

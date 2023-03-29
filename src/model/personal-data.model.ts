@@ -4,6 +4,7 @@ export class PersonalData {
 
 	/* SPECIAL PERSONAL DATA TYPE */
 	public static H_SEP:PersonalData=new PersonalData({key:"HSEP",value:"ORIZZONTAL SEPARATOR", type:"sep"})
+	public static PBREAK:PersonalData=new PersonalData({key:"PB",value:"PB", type:"PB"})
 	public static EMPTY:PersonalData=new PersonalData({key:"",value:"",halfcolumn:true, type:"empty"})
 	/*  */
 
