@@ -6,7 +6,7 @@ export class CardsService {
 
 	private _cards:Card[]=[
 		new Card("Stato attuale e contatti", "fa fa-id-card",[
-			new PersonalData({key:"Contatti",value:"Email",type:"label"}),
+			new PersonalData({key:"Contatti",value:"Contatti",type:"label"}),
 			new PersonalData({key:"email 1",value:"psykedady@gmail.com", type:"email",halfcolumn:true}),
 			new PersonalData({key:"email 2",value:"psdady@msn.com", type:"email",halfcolumn:true}),
 			new PersonalData({key:"Tel 1",value:"+39 3663148360", type:"tel",halfcolumn:true}),
