@@ -14,6 +14,7 @@ import { CVStaticStickyBar } from './cvstatic/cvstatic-stickybar/cvstatic-sticky
 import { CVStatic } from './cvstatic/cvstatic.component';
 import { PersonalCardInfo } from './personal-card/personal-card-info/personal-card-info.component';
 import { PersonalCard } from './personal-card/personal-card.component';
+import { CvStaticQrcodeComponent } from './cvstatic/qrcode/cvstatic.qrcode.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { PersonalCard } from './personal-card/personal-card.component';
 		PersonalCard,
 		PersonalCardInfo,
 		LevelPipe,
-		MarkdownPipe
+		MarkdownPipe,
+  CvStaticQrcodeComponent
 	],
 	imports: [
 		BrowserModule

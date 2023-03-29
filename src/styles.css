@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+/* Specify in CSS */
+.codecustom { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  .codecustom { font-family: 'Fira Code VF', monospace; }
+}
+
 .text-blur{
 	text-shadow:  0px  0px  5px var(--secondary-light-color),
 				  0px  1px  5px var(--secondary-light-color),

@@ -1,0 +1,9 @@
+.printstack{
+	display: none;		
+}
+
+@media print {
+	.printstack{
+		display: block;
+	}
+}
