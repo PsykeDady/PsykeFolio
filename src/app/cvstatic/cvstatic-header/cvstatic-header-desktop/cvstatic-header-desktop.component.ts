@@ -6,11 +6,16 @@ import { PersonalData } from "src/model/personal-data.model";
 	templateUrl:"./cvstatic-header-desktop.component.html",
 	styleUrls:["../cvstatic-header.component.css","./cvstatic-header-desktop.component.css"]
 }) export class CVStaticHeaderDesktop {
-	@Input() 
-	personal_data:PersonalData[]=[]; 
 	@Input()
 	updated:string="";
 
-	public constructor(){
-	}
+	@Input()
+	name:string="";
+
+	@Input()
+	description:string="";
+	
+	@Input("personal_data")
+	personal_data:PersonalData[]= []
+
 }

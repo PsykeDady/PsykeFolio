@@ -1,12 +1,16 @@
 <div class="d-none d-md-block">
 	<cvstatic-header-desktop
-		[personal_data]="personalDataService.personal_data"
+		[personal_data]="personal_data"
 		[updated]="updated"
+		[name]="name"
+		[description]="description"
 	></cvstatic-header-desktop>
 </div>
 <div class="d-md-none">
 	<cvstatic-header-mobile
-		[personal_data]="personalDataService.personal_data"
+		[personal_data]="personal_data"
 		[updated]="updated"
+		[name]="name"
+		[description]="description"
 	></cvstatic-header-mobile>
 </div>

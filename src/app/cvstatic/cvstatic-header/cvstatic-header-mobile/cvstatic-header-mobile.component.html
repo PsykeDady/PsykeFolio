@@ -1,7 +1,7 @@
 <div class="container-fluid cvs-header-container">
 	<div class="row col-10 offset-1">
 		<legend class="text-border-light text-center fs-1 fw-bolder">
-			Curriculum Vitae di Davide Galati
+			{{name}}
 		</legend>
 	</div>
 	<div class="row">
@@ -9,11 +9,16 @@
 			<img src="assets/propic" class="img-fluid rounded float-end" alt="foto curriculum">
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-10 offset-1 text-center text-border-light">
+			<small>{{description}}</small>
+		</div>
+	</div>
 	<div class="row p-4 pb-0">
 		<div class="col">
 			<div class="row align-items-center mb-1" *ngFor="let dato of personal_data; let i=index">
 				<div class="col-6 pe-1">
-					<p class="lh-1 fw-bolder text-end text-border m-0 p-0">{{dato.personal.key}}</p>
+					<p class="lh-1 fw-bolder text-end text-light m-0 p-0">{{dato.personal.key}}</p>
 				</div>
 				<div class="col-5 ps-0">
 					<p class="lh-1 fw-bolder text-start text-border-light p-0 m-0 ps-1 border-start border-light">{{dato.personal.value}}</p>
